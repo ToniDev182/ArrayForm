@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Matriculación</title>
+</head>
+<body>
+<h1>Formulario de Matriculación</h1>
+<form action="Tarea8.php" method="post">
+    <label for="nombre">Nombre y Apellidos:</label>
+    <input type="text" id="nombre" name="nombre" required title="Introduce tu nombre y apellidos.">
+    <br><br>
+
+    <label>Selecciona Módulos:</label><br>
+
+    <!--cuando usamos [] los valores de todos los modulos seleccionados se envian juntos al servidor como un array -->
+    <label for="DWES"> DWES</label>
+    <input type="checkbox" id="DWES" name="modulos[]" value="DWES"> <br>
+
+    <label for="DAW"> DAW</label>
+    <input type="checkbox" id="DAW" name="modulos[]" value="DAW"> <br>
+
+    <label for="FOL"> FOL</label>
+    <input type="checkbox" id="FOL" name="modulos[]" value="FOL"> <br>
+
+    <label for="EIE"> EIE</label>
+    <input type="checkbox" id="EIE" name="modulos[]" value="EIE"> <br>
+
+    <label for="PROG"> PROG</label>
+    <input type="checkbox" id="PROG" name="modulos[]" value="PROG"> <br>
+
+    <label for="BBDD"> BBDD</label>
+    <input type="checkbox" id="BBDD" name="modulos[]" value="BBDD"> <br>
+
+    <label for="SINF"> SINF</label>
+    <input type="checkbox" id="SINF" name="modulos[]" value="SINF"> <br>
+
+    <label for="IGU"> IGU</label>
+    <input type="checkbox" id="IGU" name="modulos[]" value="IGU"> <br>
+
+    <label for="ED"> ED</label>
+    <input type="checkbox" id="ED" name="modulos[]" value="ED"> <br>
+
+    <br>
+
+    <input type="submit" name="Enviar" value="Enviar">
+
+</form>
+</body>
+</html>
